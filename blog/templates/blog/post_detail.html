@@ -9,15 +9,19 @@
         </a>
     {% endif %}
 
-    <article>
-        {% if post.published_date %}
-            <time class="date">
-                {{ post.published_date }}
-            </time>
-        {% endif %}
+    <div class="post-box">
 
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </article>
+        <article>
+            {% if post.published_date %}
+                <time class="date">
+                    {{ post.published_date }}
+                </time>
+            {% endif %}
+
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
+
+    </div>
 
 {% endblock %}
