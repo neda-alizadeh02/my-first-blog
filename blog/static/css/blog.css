@@ -68,10 +68,12 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #ffffff;
-    background: none;
-    border-color: #C25100;
+    color: #C25100;
+    background: white;
+    border: 1px solid #C25100;
     margin-left: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
